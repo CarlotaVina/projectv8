@@ -10,9 +10,10 @@ var	dataLocations = [
    	                	 tags: ['hotel']
    	                 },
    	                 {
-   	                	 position:  {lat:    40.436401, lng:  -3.685724},
-   	                	 title: 'Hotel Suites Barrio de Salamanca ',
-   	                	 tags: ['hotel']
+   	                	 position:  {lat:    40.435291, lng:  -3.685574},
+   	                	 title: 'Restaurant Eccola ',
+   	                	 tags: ['restaurant']
+
    	                 },
    	                 {
    	                	 position:  {lat: 40.436467, lng: -3.683814},
@@ -131,7 +132,7 @@ function  NeighborhoodModel() {
 								var addressName = "not found";
 							}
 							else {
-								 addressName = address;
+								addressName = address;
 							}
 							self.html += '<td>'+addressName + '</td>';
 							self.html += '</tr>';
@@ -256,7 +257,7 @@ function  NeighborhoodModel() {
 			}
 
 			for (var i = 0 ; i<self.markers().length; i++){
-			
+
 				self.openInfoWindow (i);
 			}
 			self.loadList();
